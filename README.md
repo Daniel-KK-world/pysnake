@@ -1,6 +1,9 @@
 # PySnake
-would add a video later!!!! 
 
+🎥 Demo
+
+Watch to see how the game works:
+![Demo GIF](https://github.com/MSGanesh23/pysnake/blob/main/Demo_Video.gif)
 
 A classic Snake game built using **Pygame**. Control the snake, eat the food, and grow without crashing into yourself or the walls!
 
