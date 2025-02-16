@@ -5,12 +5,14 @@ import random
 pygame.init()
 
 # Define constants
+#well colors first 
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
 block_size = 20
+#screen params
 screen_width = 600
 screen_height = 400
 
@@ -42,7 +44,7 @@ def gameLoop():
 
     # Snake body
     snake_List = []
-    Length_of_snake = 1
+    Length_of_snake = 1.2
 
     # Food position
     foodx = round(random.randrange(0, screen_width - block_size) / 20.0) * 20.0
@@ -101,7 +103,7 @@ def gameLoop():
             if x == snake_Head:
                 game_close = True
 
-        screen.fill(blue)
+        screen.fill(black)
         draw_snake(block_size, snake_List)
         pygame.draw.rect(screen, red, [foodx, foody, block_size, block_size])
 
