@@ -1,0 +1,145 @@
+[
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "importPath": "pygame",
+        "description": "pygame",
+        "isExtraImport": true,
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)\n    mesg = font_style.render(msg, True, color)\n    screen.blit(mesg, [screen_width / 6, screen_height / 3])\n# Function to draw the snake\ndef draw_snake(snake_block, snake_list):\n    for x in snake_list:\n        pygame.draw.rect(screen, green, [x[0], x[1], snake_block, snake_block])\n# Main game loop\ndef gameLoop():",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "draw_snake",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def draw_snake(snake_block, snake_list):\n    for x in snake_list:\n        pygame.draw.rect(screen, green, [x[0], x[1], snake_block, snake_block])\n# Main game loop\ndef gameLoop():\n    game_over = False\n    game_close = False\n    # Initial position of the snake\n    x1 = screen_width / 2\n    y1 = screen_height / 2",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "gameLoop",
+        "kind": 2,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "def gameLoop():\n    game_over = False\n    game_close = False\n    # Initial position of the snake\n    x1 = screen_width / 2\n    y1 = screen_height / 2\n    x1_change = 0\n    y1_change = 0\n    # Snake body\n    snake_List = []",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "white",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "white = (255, 255, 255)\nblack = (0, 0, 0)\nred = (213, 50, 80)\ngreen = (0, 255, 0)\nblue = (50, 153, 213)\nblock_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "black",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "black = (0, 0, 0)\nred = (213, 50, 80)\ngreen = (0, 255, 0)\nblue = (50, 153, 213)\nblock_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "red",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "red = (213, 50, 80)\ngreen = (0, 255, 0)\nblue = (50, 153, 213)\nblock_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "green",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "green = (0, 255, 0)\nblue = (50, 153, 213)\nblock_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "blue",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "blue = (50, 153, 213)\nblock_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "block_size",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "block_size = 20\n#screen params\nscreen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "screen_width",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "screen_width = 600\nscreen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)\n    mesg = font_style.render(msg, True, color)\n    screen.blit(mesg, [screen_width / 6, screen_height / 3])",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "screen_height",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "screen_height = 400\nscreen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)\n    mesg = font_style.render(msg, True, color)\n    screen.blit(mesg, [screen_width / 6, screen_height / 3])\n# Function to draw the snake",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "screen",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "screen = pygame.display.set_mode((screen_width, screen_height))\npygame.display.set_caption('PySnake')\nclock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)\n    mesg = font_style.render(msg, True, color)\n    screen.blit(mesg, [screen_width / 6, screen_height / 3])\n# Function to draw the snake\ndef draw_snake(snake_block, snake_list):",
+        "detail": "snake",
+        "documentation": {}
+    },
+    {
+        "label": "clock",
+        "kind": 5,
+        "importPath": "snake",
+        "description": "snake",
+        "peekOfCode": "clock = pygame.time.Clock()\n# Function to display messages\ndef message(msg, color):\n    font_style = pygame.font.SysFont(\"bahnschrift\", 25)\n    mesg = font_style.render(msg, True, color)\n    screen.blit(mesg, [screen_width / 6, screen_height / 3])\n# Function to draw the snake\ndef draw_snake(snake_block, snake_list):\n    for x in snake_list:\n        pygame.draw.rect(screen, green, [x[0], x[1], snake_block, snake_block])",
+        "detail": "snake",
+        "documentation": {}
+    }
+]
