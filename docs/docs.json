@@ -1,0 +1,21 @@
+{
+  "name": "PySnake",
+  "theme": "mint",
+  "colors": {
+    "primary": "#16a34a",
+    "light": "#16a34a",
+    "dark": "#16a34a"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Introduction",
+        "pages": ["index"]
+      },
+      {
+        "group": "Getting Started",
+        "pages": ["quickstart", "development"]
+      }
+    ]
+  }
+}
